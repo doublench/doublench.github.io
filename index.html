@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Lexer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div class="row header">
+            <header class="span100">
+                <h1>C language lexical analyze (C11)</h1>
+            </header>
+        </div>
+        <article>
+            <div class="row code-tokens">
+                <section class="span50 input">
+                    <h2>Input your code:</h2>
+                    <textarea class="form-control" id="textarea" spellcheck="false"></textarea>
+                </section>
+                <section class="span50 output">
+                    <h2>Tokens:</h2>
+                    <pre id="tokens"></pre>
+                </section>
+            </div>
+            <div class="row legend">
+                <aside class="span50">
+                    <span class="KEYWORDS legend-tokens">KEYWORDS</span>
+                    <span class="IDENTIFIERS legend-tokens">IDENTIFIERS</span>
+                    <span class="CONSTANTS_INTEGER legend-tokens">CONSTANTS_INTEGER</span>
+                    <span class="CONSTANTS_FLOAT legend-tokens">CONSTANTS_FLOAT</span>
+                    <span class="CONSTANTS_ENUM legend-tokens">CONSTANTS_ENUM</span>
+                    <span class="CONSTANTS_CHARACTER legend-tokens">CONSTANTS_CHARACTER</span>
+                    <span class="STRING_LITERALS legend-tokens">STRING_LITERALS</span>
+                    <span class="PUNCTUATORS legend-tokens">PUNCTUATORS</span><span class="post-fix">&#8592; tokens</span></aside>
+                <aside class="span50">
+                    <span class="pp-tokens">HEADER_NAMES</span>
+                    <span class="pp-tokens">IDENTIFIERS</span>
+                    <span class="pp-tokens">PREPROCESSING_NUMBERS</span>
+                    <span class="pp-tokens">CONSTANTS_CHARACTER</span>
+                    <span class="pp-tokens">STRING_LITERALS</span>
+                    <span class="pp-tokens">PUNCTUATORS</span><span class="post-fix">&#8592; preprocessing-tokens (soon...)</span></aside>
+            </div>
+        </article>
+    </main>
+    <script src="../assets/js/lexer.js "></script>
+    <script src="../assets/js/main.js "></script>
+</body>
+
+</html>

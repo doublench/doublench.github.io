@@ -1,0 +1,210 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+html,
+body {
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.row:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+[class*="span"] {
+    display: inline;
+    float: left;
+    margin-right: 5px;
+}
+
+[class*="span"]:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+.span50 {
+    padding: 5px;
+    width: 49.8%;
+}
+
+.span100 {
+    padding: 5px;
+    width: 100%;
+}
+
+.offset50-left {
+    margin-left: 50.2% !important;
+}
+
+.offset50-right {
+    margin-right: 50.2% !important;
+}
+
+main {
+    height: 100%;
+}
+
+.header {
+    height: 5%;
+    text-align: center;
+}
+
+.header:before {
+    content: "\200B";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.header header {
+    background: #151515;
+    display: inline-block !important;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+h1 {
+    color: #fff;
+    display: inline-block;
+    font: 1.2em "Orbitron";
+    height: 100%;
+}
+
+article {
+    height: 95%;
+}
+
+.code-tokens {
+    height: 88%;
+}
+
+.legend {
+    height: 12%;
+    margin: 0;
+}
+
+.input,
+.output {
+    height: 100%;
+}
+
+.input h2,
+.output h2 {
+    font: 1em "Orbitron";
+}
+
+.input textarea,
+.output pre {
+    font-family: inherit;
+    height: 90%;
+    padding: 3px;
+    width: 100%;
+}
+
+.input textarea {
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #aaa;
+    outline: none;
+    resize: none;
+}
+
+.output pre {
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #aaa;
+    font-size: inherit;
+    margin-top: 14px;
+}
+
+.legend aside {
+    font: 1em/1.2em "Orbitron";
+    height: 76%;
+    padding-top: 0px !important;
+}
+
+span {
+    border-radius: .25rem;
+    color: #fff;
+    padding: 0 2px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.legend-tokens {
+    font-family: "Roboto";
+    opacity: 0.5;
+}
+
+.legend-tokens:hover {
+    opacity: 1;
+}
+
+.pp-tokens {
+    background: #3f3f3f;
+    font-family: "Roboto";
+    opacity: 0.5;
+}
+
+.pp-tokens:hover {
+    opacity: 1;
+}
+
+.post-fix {
+    color: #000000;
+    font: italic 1em "Orbitron";
+    padding-left: 5px;
+}
+
+.KEYWORDS {
+    background: #ff0e00;
+}
+
+.IDENTIFIERS {
+    background: #000000;
+}
+
+.CONSTANTS_INTEGER {
+    background: #0097ff;
+}
+
+.CONSTANTS_FLOAT {
+    background: #6400ff;
+}
+
+.CONSTANTS_ENUM {
+    background: #369900;
+}
+
+.CONSTANTS_CHARACTER {
+    background: #ffff01;
+    color: #000000;
+}
+
+.STRING_LITERALS {
+    background: #fe00ff;
+}
+
+.PUNCTUATORS {
+    background: #aeaeae;
+}

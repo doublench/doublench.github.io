@@ -1,0 +1,23 @@
+{
+  "name": "jeudesprit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-server-livereload": "^1.8.1"
+  },
+  "scripts": {
+    "build": "babel assets/js/es6 -d assets/js --presets es2015"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
